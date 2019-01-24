@@ -1,0 +1,6 @@
+services:
+  image:
+    build:
+      url: github.com/strongmonkey/demo.git
+      template: buildkit
+      imageName: daishan1992:demo/v1
