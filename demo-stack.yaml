@@ -1,6 +1,10 @@
 services:
-  image:
+  demo:
     build:
-      url: github.com/strongmonkey/demo.git
+      url: https://github.com/StrongMonkey/demo.git
       template: buildkit
-      imageName: daishan1992:demo/v1
+      imageName: daishan1992/demo
+      commit: ceaee3f7f31433ad32c4a31d69da37dd4d0d84f0
+    imagePullPolicy: always
+    ports:
+    - 8080/http
