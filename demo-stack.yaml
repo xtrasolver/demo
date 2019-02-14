@@ -3,7 +3,7 @@ services:
     build:
       url: https://github.com/StrongMonkey/demo.git
       template: buildkit
-      tag: v0.0.2
+      branch: master
     imagePullPolicy: always
     ports:
     - 8080/http
