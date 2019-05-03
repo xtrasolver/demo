@@ -1,9 +1,7 @@
 services:
   demo:
     build:
-      url: https://github.com/StrongMonkey/demo.git
-      template: buildkit
+      repo: https://github.com/StrongMonkey/demo.git
       branch: master
-    imagePullPolicy: always
     ports:
     - 8080/http
