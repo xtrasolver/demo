@@ -5,10 +5,12 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"time"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Hi there, I am StrongMonkey:v32")
+	time.Sleep(100 * time.Millisecond)
+	fmt.Fprintln(w, "Hi there, I am StrongMonkey:v1")
 }
 
 func main() {
