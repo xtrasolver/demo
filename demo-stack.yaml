@@ -1,7 +1,5 @@
 services:
   demo:
-    build:
-      repo: https://github.com/StrongMonkey/demo.git
-      branch: master
+    image: ibuildthecloud/demo:v1
     ports:
-    - 8080/http
+    - 80/http
